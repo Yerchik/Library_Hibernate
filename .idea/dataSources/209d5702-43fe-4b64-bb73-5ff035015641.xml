@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="Library@localhost">
+  <database-model serializer="dbm" rdbms="MYSQL" format-version="4.0">
+    <root id="1"/>
+    <schema id="2" parent="1" name="library">
+      <Current>1</Current>
+      <Visible>1</Visible>
+    </schema>
+    <schema id="3" parent="1" name="3bankaccout"/>
+    <schema id="4" parent="1" name="bank"/>
+    <schema id="5" parent="1" name="bankaccout"/>
+    <schema id="6" parent="1" name="finalbankaccout"/>
+    <schema id="7" parent="1" name="finalbankaccout1"/>
+    <schema id="8" parent="1" name="hibernate"/>
+    <schema id="9" parent="1" name="ibankaccout"/>
+    <schema id="10" parent="1" name="imarket"/>
+    <schema id="11" parent="1" name="information_schema"/>
+    <schema id="12" parent="1" name="jdbc"/>
+    <schema id="13" parent="1" name="jpadb"/>
+    <schema id="14" parent="1" name="market"/>
+    <schema id="15" parent="1" name="market12"/>
+    <schema id="16" parent="1" name="mysql"/>
+    <schema id="17" parent="1" name="name"/>
+    <schema id="18" parent="1" name="performance_schema"/>
+    <schema id="19" parent="1" name="sakila"/>
+    <schema id="20" parent="1" name="servlet"/>
+    <schema id="21" parent="1" name="sys"/>
+    <schema id="22" parent="1" name="testing1"/>
+    <schema id="23" parent="1" name="testing2"/>
+    <schema id="24" parent="1" name="testing3"/>
+    <schema id="25" parent="1" name="testing4"/>
+    <schema id="26" parent="1" name="world"/>
+    <table id="27" parent="2" name="book"/>
+    <column id="28" parent="27" name="id">
+      <Position>1</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="29" parent="27" name="author">
+      <Position>2</Position>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <column id="30" parent="27" name="name">
+      <Position>3</Position>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <key id="31" parent="27" name="PRIMARY">
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+  </database-model>
+</dataSource>
