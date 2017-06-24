@@ -38,7 +38,8 @@ public class DB {
     public static void removeBook(Book bookRemove, EntityManagerFactory entityManagerFactory){
         EntityManager entityManager = entityManagerFactory.createEntityManager();
         entityManager.getTransaction().begin();
-        entityManager.remove(bookRemove);
+        entityManager.remove(entityManager.createQuery("SELECT b FROM Book b WHERE b = :bookRemove").
+                setParameter("bookRemove", bookRemove).getSingleResult());
         entityManager.getTransaction().commit();
         entityManager.close();
     }
